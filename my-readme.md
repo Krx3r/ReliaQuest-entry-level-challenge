@@ -55,7 +55,7 @@ This project is a Spring Boot application that provides a REST API for managing 
 
 ## Using the API with Postman (How to run)
 
-- **First go to api->src->main->java->com.challenge.api and run the EntryLevelJavaChallengeApplication**
+- **First go to api->src->main->java->com->challenge->api and run the EntryLevelJavaChallengeApplication.java file**
 - Then open Postman to test the following endpoints:
 
 ### Base URL
