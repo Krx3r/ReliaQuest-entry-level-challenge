@@ -70,7 +70,6 @@ http://localhost:8080/api/v1/employee
 - **Description**: Returns a list of all employees.
 - **Response**:
   ```json
-  [
     {
       "uuid": "123e4567-e89b-12d3-a456-426614174000",
       "firstName": "Ada",
@@ -83,8 +82,6 @@ http://localhost:8080/api/v1/employee
       "contractHireDate": "2020-01-01T00:00:00Z",
       "contractTerminationDate": null
     }
-  ]
-
 
 #### 2. **Retrieve an Employee by UUID**
 - **Method**: `GET`
@@ -94,7 +91,6 @@ http://localhost:8080/api/v1/employee
    - `uuid` (required): The UUID of the employee.
 - **Response**:
   ```json
-  
        {
        "uuid": "123e4567-e89b-12d3-a456-426614174000",
        "firstName": "Ada",
@@ -106,8 +102,7 @@ http://localhost:8080/api/v1/employee
        "age": 36,
        "contractHireDate": "2020-01-01T00:00:00Z",
        "contractTerminationDate": null
-       } 
-  
+       }
 
 #### 3. **Create a New Employee**
 - **Method**: `POST`
@@ -117,7 +112,6 @@ http://localhost:8080/api/v1/employee
   - `Content-Type: application/json`
 - **Request Body**:
   ```json
-  
     {
       "firstName": "John",
       "lastName": "Doe",
@@ -126,12 +120,9 @@ http://localhost:8080/api/v1/employee
       "salary": 120000,
       "age": 30
     }
-
-  
   
 - **Response**:
   ```json
-  
     {
       "uuid": "123e4567-e89b-12d3-a456-426614174001",
       "firstName": "John",
@@ -144,7 +135,6 @@ http://localhost:8080/api/v1/employee
       "contractHireDate": "2023-10-01T12:00:00Z",
       "contractTerminationDate": null
     }
-  
 
 ## Error Handling
 
