@@ -11,11 +11,23 @@ import org.springframework.web.server.ResponseStatusException;
 import java.util.List;
 import java.util.UUID;
 
+/**
+ * REST controller for managing employee-related operations.
+ * Provides endpoints to retrieve all employees, retrieve an employee by UUID, and create a new employee.
+ */
+
+
 @RestController
 @RequestMapping("/api/v1/employee")
 public class EmployeeController {
 
     private final EmployeeService employeeService;
+
+    /**
+     * Constructor for EmployeeController.
+     * @param employeeService Service layer for handling employee business logic.
+     */
+
 
     public EmployeeController(EmployeeService employeeService) {
         this.employeeService = employeeService;

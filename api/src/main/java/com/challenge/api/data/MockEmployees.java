@@ -8,10 +8,22 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
+/**
+ * MockEmployees is a utility class that simulates a database for storing employee data.
+ * It uses an in-memory HashMap to store employee records, pre-populated with sample data.
+ */
+
 
 public class MockEmployees {
+
+    /**
+     * A static in-memory store for employee data, where the key is the employee's UUID
+     * and the value is the corresponding Employee object.
+     */
+
     public static final Map<UUID, Employee> MOCK_STORE = new HashMap<>();
 
+    // Static block to initialize the mock data store with sample employees.
     static {
         add("Ada", "Lovelace", "ada@example.com", "Staff Engineer", 250000, 36,
                 Instant.parse("2020-01-01T00:00:00Z"));
@@ -24,6 +36,20 @@ public class MockEmployees {
         add("Katherine", "Johnson", "katherine@example.com", "Mathematician", 210000, 50,
                 Instant.parse("2016-11-30T00:00:00Z"));
     }
+
+
+    /**
+     * Helper method to add a mock employee to the in-memory store.
+     *
+     * @param first     The first name of the employee.
+     * @param last      The last name of the employee.
+     * @param email     The email address of the employee.
+     * @param jobTitle  The job title of the employee.
+     * @param salary    The salary of the employee.
+     * @param age       The age of the employee.
+     * @param date      The contract hire date of the employee.
+     */
+
 
     // Helper to add a mock employee
     private static void add(String first, String last, String email, String jobTitle, int salary, int age, Instant date) {
